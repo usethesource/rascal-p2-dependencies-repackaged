@@ -1,16 +1,36 @@
-<project>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+    
     <groupId>org.rascalmpl</groupId>
     <artifactId>rascal-p2-dependencies-repackaged</artifactId>
     <version>0.0.1</version>
     <packaging>eclipse-plugin</packaging>
+
+    <!-- deployment configuration (usethesource) -->
+    <distributionManagement>
+        <repository>
+            <id>usethesource-releases</id>
+            <url>http://nexus.rascal-mpl.org/repository/maven-releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>usethesource-snapshots</id>
+            <url>http://nexus.rascal-mpl.org/repository/maven-snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
+
+    <!-- dependency resolution configuration (usethesource) -->
     <repositories>
+        <repository>
+            <id>usethesource</id>
+            <url>http://nexus.rascal-mpl.org/repository/maven-public/</url>
+        </repository>
         <repository>
             <id>neon</id>
             <layout>p2</layout>
             <url>http://download.eclipse.org/releases/neon</url>
         </repository>
     </repositories>
+
     <build>
         <plugins>
             <plugin>
