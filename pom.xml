@@ -3,12 +3,11 @@
     
     <groupId>org.rascalmpl</groupId>
     <artifactId>rascal-p2-dependencies-repackaged</artifactId>
-    <version>0.1.0</version>
+    <version>0.1.1-SNAPSHOT</version>
     <packaging>eclipse-plugin</packaging>
 
 	<scm>
 		<developerConnection>scm:git:https://github.com/usethesource/rascal-p2-dependencies-repackaged</developerConnection>
-        <tag>v0.1.0</tag>
 	</scm>
     <!-- deployment configuration (usethesource) -->
     <distributionManagement>
