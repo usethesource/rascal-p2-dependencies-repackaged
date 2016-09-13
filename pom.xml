@@ -10,11 +10,11 @@
     <distributionManagement>
         <repository>
             <id>usethesource-releases</id>
-            <url>http://nexus.rascal-mpl.org/repository/maven-releases/</url>
+            <url>http://nexus.rascal-mpl.org/contents/repositories/releases/</url>
         </repository>
         <snapshotRepository>
             <id>usethesource-snapshots</id>
-            <url>http://nexus.rascal-mpl.org/repository/maven-snapshots/</url>
+            <url>http://nexus.rascal-mpl.org/contents/repositories/snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
 
@@ -22,12 +22,12 @@
     <repositories>
         <repository>
             <id>usethesource</id>
-            <url>http://nexus.rascal-mpl.org/repository/maven-public/</url>
+            <url>http://nexus.rascal-mpl.org/contents/repositories/public/</url>
         </repository>
         <repository>
             <id>neon</id>
             <layout>p2</layout>
-            <url>http://download.eclipse.org/releases/neon</url>
+            <url>http://nexus.rascal-mpl.org/content/repositories/eclipse-neon/</url>
         </repository>
     </repositories>
 
