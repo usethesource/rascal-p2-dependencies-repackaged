@@ -3,6 +3,5 @@ Bundle-ManifestVersion: 2
 Bundle-Name: rascal-p2-dependencies-repackaged
 Bundle-SymbolicName: rascal-p2-dependencies-repackaged
 Bundle-Version: 0.1.1.qualifier
-Require-Bundle: org.eclipse.swt,
-  org.eclipse.jdt.core
+Require-Bundle: org.eclipse.jdt.core
 Bundle-Vendor: rascal-p2-dependencies-repackaged
