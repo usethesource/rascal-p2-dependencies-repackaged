@@ -29,9 +29,9 @@
             <url>http://nexus.usethesource.io/content/repositories/public/</url>
         </repository>
         <repository>
-            <id>neon</id>
+            <id>oxygen</id>
             <layout>p2</layout>
-            <url>http://nexus.usethesource.io/content/repositories/eclipse-neon/</url>
+            <url>http://nexus.usethesource.io/content/repositories/eclipse-oxygen/</url>
         </repository>
     </repositories>
 
