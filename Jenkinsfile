@@ -4,14 +4,17 @@ node {
   env.PATH="${env.JAVA_HOME}/bin:${mvnHome}/bin:${env.PATH}"
 
   try {
-	stage 'Clone'
-	checkout scm
+	stage('Clone') {
+	  checkout scm
+    }
 	
-	stage 'Build and Test'
-	sh "mvn -B clean install"
+	stage('Build and Test') {
+	  sh "mvn -B clean package"
+    }
 	
-	stage 'Deploy'
-	sh "mvn -s ${env.HOME}/usethesource-maven-settings.xml -B deploy"
+	stage('Deploy') {
+	  sh "mvn -s ${env.HOME}/usethesource-maven-settings.xml -B deploy"
+    }
     
     if (currentBuild.previousBuild.result == "FAILURE") { 
   	  slackSend (color: '#5cb85c', message: "BUILD BACK TO NORMAL:  <${env.BUILD_URL}|${env.JOB_NAME} [${env.BUILD_NUMBER}]>")
