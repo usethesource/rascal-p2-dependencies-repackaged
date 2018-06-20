@@ -9,8 +9,7 @@
 
 	<scm>
 		<developerConnection>scm:git:https://github.com/usethesource/rascal-p2-dependencies-repackaged</developerConnection>
-	  <tag>rascal-p2-dependencies-repackaged-0.4.0</tag>
-  </scm>
+       </scm>
     <!-- deployment configuration (usethesource) -->
     <distributionManagement>
         <repository>
