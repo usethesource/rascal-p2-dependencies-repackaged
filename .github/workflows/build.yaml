@@ -30,8 +30,6 @@ jobs:
           key: m2-${{ hashFiles('**/pom.xml') }}
           restore-keys: m2
 
-      - run: printenv
-
       - name: Test with Maven
         run: mvn -B compile test
 
