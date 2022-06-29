@@ -2,8 +2,8 @@
     <modelVersion>4.0.0</modelVersion>
     
     <groupId>org.rascalmpl</groupId>
-    <artifactId>rascal-p2-dependencies-repackaged</artifactId>
-    <version>0.6.0-SNAPSHOT</version>
+    <artifactId>rascal-cdt-repackaged</artifactId>
+    <version>0.1.0-SNAPSHOT</version>
     
     <packaging>eclipse-plugin</packaging>
 
@@ -12,20 +12,31 @@
        </scm>
 
     <!-- dependency resolution configuration (usethesource) -->
-    <repositories>
-        <repository>
-            <id>eclipse</id>
-            <layout>p2</layout>
-                <!-- make sure to sync it with the orbit below -->
-            <url>https://download.eclipse.org/releases/2019-09/201909061000/</url>
-        </repository>
-        <repository>
-            <id>orbit</id>
-            <layout>p2</layout>
-                <!-- lookup the right build here: https://download.eclipse.org/tools/orbit/downloads/ -->
-            <url>https://download.eclipse.org/tools/orbit/downloads/drops/R20190827152740/repository/</url>
-        </repository>
-    </repositories>
+       <repositories>
+           <repository>
+               <id>usethesource-rascalmpl-release</id>
+               <url>https://update.rascal-mpl.org/stable/</url>
+           </repository>
+
+           <repository>
+               <id>tm-10-5</id>
+               <layout>p2</layout>
+               <url>https://download.eclipse.org/tools/cdt/releases/10.5</url>
+           </repository>
+
+           <repository>
+               <id>eclipse_2020-03</id>
+               <layout>p2</layout>
+               <url>http://download.eclipse.org/releases/2020-03/</url>
+           </repository>
+
+           <repository>
+               <id>rascal-eclipse</id>
+               <layout>p2</layout>
+               <url>https://update.rascal-mpl.org/stable/</url>
+           </repository>
+
+       </repositories>
 
     <build>
         <plugins>
