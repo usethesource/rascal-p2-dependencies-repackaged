@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: rascal-p2-dependencies-repackaged
 Bundle-SymbolicName: rascal-p2-dependencies-repackaged
-Bundle-Version: 0.6.0
+Bundle-Version: 0.7.0.qualifier
 Require-Bundle: 
     org.eclipse.jdt.core,
     org.eclipse.text
