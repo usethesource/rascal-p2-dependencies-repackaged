@@ -1,8 +1,10 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Name: rascal-cdt-repackaged
-Bundle-SymbolicName: rascal-cdt-repackaged
-Bundle-Version: 0.1.0.qualifier
-Require-Bundle: org.eclipse.cdt.core,
-    org.eclipse.core.runtime
-Bundle-Vendor: usethesource.io
+Bundle-Name: rascal-p2-dependencies-repackaged
+Bundle-SymbolicName: rascal-p2-dependencies-repackaged
+Bundle-Version: 0.6.0.qualifier
+Require-Bundle: 
+    org.eclipse.jdt.core,
+    org.eclipse.text,
+    com.ibm.icu.base
+Bundle-Vendor: rascal-p2-dependencies-repackaged
